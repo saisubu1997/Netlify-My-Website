@@ -1,26 +1,27 @@
-import React from "react";
+import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Welcome saisubu final year project
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <p>Gait Line Analysis</p>
+          <img src={logo} className="App-logo" alt="logo" />
+
+          <p>
+            Served From Host <code>src/App.js</code>
+          </p>
+          <img
+            src="https://cdn-images-1.medium.com/max/1600/1*1F2CGO_OyhOnp397-1ysNw.gif"
+            alt="logo"
+          />
+          <p>Pipelined to Firebase.</p>
+        </header>
+      </div>
+    );
+  }
 }
 
 export default App;
